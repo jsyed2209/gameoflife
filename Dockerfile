@@ -1,5 +1,5 @@
 FROM ubuntu:18.04
-USER SUDO
+USER root
 RUN  apt-get install openjdk-8-jdk
 RUN mkdir -p /home/app
 COPY /var/lib/jenkins/.m2/repository/be/cegeka/gameoflife/0.0.3/gameoflife-0.0.3.war ./home/app
